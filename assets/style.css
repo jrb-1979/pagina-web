@@ -1,5 +1,11 @@
+:root{
+    --text-color: #ffffff;
+    --card-front-color: #afffaf;
+    --card-back-color: #1e931e;
+}
+
 body {
-    background-color: rgb(215, 250, 215);
+    background: url('img/green-gradient-background-59h61o4ue8rwaqvt.jpg');
     font-family: cursive;
 }
 
@@ -9,31 +15,43 @@ body {
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: rgb(86, 211, 115);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
 }
 
 .cartao__conteudo {
+    background-color: var(--card-front-color);
     text-align: center;
     /*background-color: aquamarine;*/
     height: 100%;
 }
 
 .cartao__conteudo h3 {
-    background-color: rgb(38, 169, 24);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
+.cartao__conteudo p {
+    margin-top: 1rem;
+    padding: 2rem;
+}
 
+.cartao__conteudo__pergunta p {
+    color: var(--text-color);
+    font-weight: 500;
+}
 
-
+.cartao__conteudo__resposta p {
+    color: var(--card-back-color);
+    font-weight: 700;
+}
 
 footer {
     background-color: rgb(55, 138, 51);
